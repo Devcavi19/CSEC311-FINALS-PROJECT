@@ -1,4 +1,4 @@
-import { useState, FormEvent } from 'react';
+import { useState, type FormEvent } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { busesAPI } from '../../../api';
 import FlashMessage from '../../../components/FlashMessage';
