@@ -1,4 +1,4 @@
-import { useState, FormEvent } from 'react';
+import { useState, type FormEvent } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 import FlashMessage from '../components/FlashMessage';
@@ -182,19 +182,22 @@ const Login = () => {
                                     />
 
                                     {/* Content */}
-                                    <div className="text-white p-5 position-relative z-1" style={{ width: '100%' }}>
+                                    <div className="p-5 position-relative z-1" style={{ width: '100%' }}>
                                         <h3 style={{
                                             fontFamily: 'var(--font-display)',
                                             fontWeight: 700,
                                             fontSize: 'var(--text-2xl)',
-                                            marginBottom: '0.5rem'
+                                            marginBottom: '0.5rem',
+                                            color: '#FFFFFF',
+                                            textShadow: '0 2px 8px rgba(0,0,0,0.8)'
                                         }}>
                                             Welcome Back
                                         </h3>
                                         <p style={{
-                                            opacity: 0.85,
                                             fontSize: 'var(--text-base)',
-                                            margin: 0
+                                            margin: 0,
+                                            color: 'rgba(255,255,255,0.9)',
+                                            textShadow: '0 1px 4px rgba(0,0,0,0.6)'
                                         }}>
                                             Sign in to continue your journey with us.
                                         </p>

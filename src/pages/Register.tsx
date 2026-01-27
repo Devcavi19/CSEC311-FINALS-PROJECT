@@ -130,12 +130,22 @@ const Register = () => {
                         position: 'relative',
                         zIndex: 1,
                         padding: '24px',
-                        color: 'white',
                     }}>
-                        <h3 style={{ fontSize: '20px', fontWeight: '600', marginBottom: '4px' }}>
+                        <h3 style={{
+                            fontSize: '20px',
+                            fontWeight: '600',
+                            marginBottom: '4px',
+                            color: '#FFFFFF',
+                            textShadow: '0 2px 8px rgba(0,0,0,0.8)'
+                        }}>
                             Start Your Journey
                         </h3>
-                        <p style={{ opacity: 0.8, fontSize: '13px', margin: 0 }}>
+                        <p style={{
+                            fontSize: '13px',
+                            margin: 0,
+                            color: 'rgba(255,255,255,0.9)',
+                            textShadow: '0 1px 4px rgba(0,0,0,0.6)'
+                        }}>
                             Book your bus tickets seamlessly and travel with comfort.
                         </p>
                     </div>
