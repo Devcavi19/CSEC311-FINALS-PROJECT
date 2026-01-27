@@ -381,7 +381,7 @@ h6 {
 }
 
 .hero-title .highlight {
-    color: var(--color-muted);
+    color: var(--color-accent);
 }
 
 .hero-subtitle {
