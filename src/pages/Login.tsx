@@ -162,61 +162,42 @@ const Login = () => {
                                     </div>
                                 </div>
 
-                                {/* Right Side - Decorative */}
+                                {/* Right Side - Image */}
                                 <div
-                                    className="col-lg-6 d-none d-lg-flex align-items-center justify-content-center position-relative"
+                                    className="col-lg-6 d-none d-lg-flex align-items-end position-relative"
                                     style={{
-                                        background: 'var(--color-accent-gradient)',
+                                        backgroundImage: 'url("/bus_log.jpg")',
+                                        backgroundSize: 'cover',
+                                        backgroundPosition: 'center',
                                         minHeight: '600px'
                                     }}
                                 >
-                                    {/* Background Pattern */}
+                                    {/* Gradient Overlay */}
                                     <div
                                         style={{
                                             position: 'absolute',
                                             inset: 0,
-                                            opacity: 0.1,
-                                            backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
+                                            background: 'linear-gradient(to top, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.3) 40%, transparent 100%)',
                                         }}
                                     />
 
                                     {/* Content */}
-                                    <div className="text-center text-white px-5 position-relative z-1">
-                                        <div style={{ fontSize: '5rem', marginBottom: '1.5rem' }}>
-                                            <FaBus style={{ color: 'white' }} />
-                                        </div>
+                                    <div className="text-white p-5 position-relative z-1" style={{ width: '100%' }}>
                                         <h3 style={{
                                             fontFamily: 'var(--font-display)',
                                             fontWeight: 700,
-                                            fontSize: 'var(--text-3xl)',
-                                            marginBottom: '1rem'
+                                            fontSize: 'var(--text-2xl)',
+                                            marginBottom: '0.5rem'
                                         }}>
-                                            Bus Ticket Booking System
+                                            Welcome Back
                                         </h3>
                                         <p style={{
                                             opacity: 0.85,
-                                            fontSize: 'var(--text-lg)',
-                                            maxWidth: '350px',
-                                            margin: '0 auto'
+                                            fontSize: 'var(--text-base)',
+                                            margin: 0
                                         }}>
-                                            Book your tickets easily and travel comfortably to your favorite destinations.
+                                            Sign in to continue your journey with us.
                                         </p>
-
-                                        {/* Stats */}
-                                        <div className="d-flex justify-content-center gap-5 mt-5">
-                                            <div>
-                                                <div style={{ fontSize: 'var(--text-3xl)', fontWeight: 700 }}>100+</div>
-                                                <div style={{ opacity: 0.7, fontSize: 'var(--text-sm)' }}>Routes</div>
-                                            </div>
-                                            <div>
-                                                <div style={{ fontSize: 'var(--text-3xl)', fontWeight: 700 }}>50+</div>
-                                                <div style={{ opacity: 0.7, fontSize: 'var(--text-sm)' }}>Buses</div>
-                                            </div>
-                                            <div>
-                                                <div style={{ fontSize: 'var(--text-3xl)', fontWeight: 700 }}>10k+</div>
-                                                <div style={{ opacity: 0.7, fontSize: 'var(--text-sm)' }}>Users</div>
-                                            </div>
-                                        </div>
                                     </div>
                                 </div>
                             </div>

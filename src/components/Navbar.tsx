@@ -151,7 +151,9 @@ const Navbar = () => {
                                             alignItems: 'center',
                                             justifyContent: 'center',
                                             fontSize: '0.875rem',
-                                            fontWeight: 600
+                                            fontWeight: 600,
+                                            lineHeight: 2.5,
+                                            textAlign: 'center'
                                         }}>
                                             {user?.username?.charAt(0).toUpperCase()}
                                         </span>
